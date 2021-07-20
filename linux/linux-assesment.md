@@ -354,3 +354,33 @@ date | mail -s "This is a remote test" user1@rhhost1.localnet.com
 - [ ] It resizes the filesystem to match the volume group size.
 - [x] It does nothing.
 - [ ] It remounts the filesystem with the new size.
+
+### Q45. Using a systemd-based distribution, you want to restrict the cron service from running either automatically or manually.  Which command would you run?
+
+- [ ] systemctl disallow crond
+- [ ] systemctl mask crond
+- [x] systemctl disable crond
+- [ ] systemctl stop crond
+
+### Q46. What would this sed command do?
+sed -E 's/[a-Z]{4}/(&)/'
+
+- [ ] It would substitute the letter with an ampersand (&).
+- [ ] It would replace all letters in the texfile.txt file with ampersands (&).
+- [ ] It would replace the first four letters with and ampersand (&).
+- [x] It would place parentheses around the first four letters of each line of textfile.txt
+
+### Q47. What does this command string do?
+find / -size -10k -exec ls -l {} \;
+
+- [ ] It find all files of size 10k using ls -l and hands them off to the find command to display
+- [ ] It finds all files of size 10k and long lists them using the ls command.
+- [ ] It finds all files in the / directory of size 10k and long lists them.
+- [x] It finds all files in the filesystem smaller than 10k and long lists them using the ls command.
+
+### Q48. Which Kernel module do you need to load to use interface bonding?
+
+- [ ] bond
+- [ ] netbond
+- [x] bonding
+- [ ] team
